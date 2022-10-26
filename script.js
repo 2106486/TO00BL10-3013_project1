@@ -122,6 +122,8 @@ document.querySelector(`#clearall`).addEventListener(`click`, () => {
 
 // onload
 window.onload = () => {
+  if (localStorage.getItem('loglevel') != undefined)
+    localStorage.removeItem('loglevel');
   itemCount = Object.keys(localStorage).length;
   displayItems();
   validateInput();
