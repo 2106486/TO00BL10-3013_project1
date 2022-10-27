@@ -82,7 +82,7 @@ validateInput = () => {
 
 // upsert item
 upsertItem = (timeStamp, itemValue, completed) => {
-  localStorage.setItem(`${timeStamp}${delimiter}${itemValue}`, completed);
+  localStorage.setItem(`${timeStamp}${delimiter}${itemValue.replace(/^\s+|\s+$/g, "")}`, completed);
   displayItems();
 };
 
