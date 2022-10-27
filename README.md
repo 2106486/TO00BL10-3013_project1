@@ -1,4 +1,4 @@
-# toDo() !! !(toDo())
+# toDo() || !(toDo())
 
 A native ECMAScript TODO list application with DOM scripting.
 One could:
